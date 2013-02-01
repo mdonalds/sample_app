@@ -10,7 +10,6 @@ end
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
 gem 'minitest'
 
 # Gems used only for assets and not required
@@ -27,8 +26,9 @@ end
 
 gem 'jquery-rails'
 
-group :test do
+group :development, :test do
   gem 'capybara', '1.1.2'
+  gem 'sqlite3'
 end
 
 group :production do
